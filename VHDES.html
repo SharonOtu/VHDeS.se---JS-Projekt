@@ -6,15 +6,20 @@
     <link rel="Stylesheet" href="VHDES.css">
 </head>
 <body>
+
+<h2> Logga in </h2>
    <form id = "myForm">
-     <label for="inputFieldE"> E-post: </label><br>
-        <input type ="email" id = "Epost" name="Epost"><br> <!--Epost-->  
-    <label for="inputFieldL"> Lösenord </label><br>
-        <input type ="password" id = "password" name="password"><br> <!--Lösenord-->
+     <label for="email"> E-post: </label><br>
+        <input type ="email" placeholder="Ange E-post" id = "email" name="email" required><br> <!--Epost-->  
+     <label for="pw"> Lösenord </label><br>
+        <input type ="password" placeholder="Ange Lösenord" id = "password" name="pw" required><br> <!--Lösenord-->
 
     <button type="submit" value="submit">Sign in</button>
     <!--<input type="button" value="">-->
 
+    <div class="ÅterställPW" >
+        <p>Glömt Lösenord? <a href="#">Återställ här</a></p>
+    </div>
     </form> 
 
 
@@ -24,22 +29,20 @@
         const form = document.getElementById('myForm');
 
         form.addEventListener('submit', function (event){
-            event.preventDefault(); //behövs för att formen ska fungera!
+            event.preventDefault(); 
             
-            //Dessa två tar ut värdet, aka texten från de två inputsen
-            const text = document.getElementById('username').value;
+            
+            const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             
-            //Debuggande för att se att texten tas in correct
-            console.log(text + password);
-            
-            //Extremt enkel kontroll av användarn och lösenord!
-            //Bör göras på backend istället för frontend men men ...
-            if(text == "test" && password == "paswrd"){
-                username = text;
-                //skickar användaren med deras användarnamn till en ny sida
-                //Även detta är inte ett säkert sätt att skicka information, men men ...
-                window.location.href = `javascript exempel 4,2.html?username=${encodeURIComponent(username)}`;
+           
+           // console.log(email + password);
+        
+          // let username = null;
+            if(email == "test@example.com" && password == "bästitest123"){
+                let username = email;
+                
+                window.location.href = `#=${encodeURIComponent(username)}`;
             }
             else{
                 alert("Fel användarnamn eller lösenord!");

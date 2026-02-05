@@ -1,0 +1,9 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.hero-image {
+    background-image: url(ViHyrDig.HeroImg.png) linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    
+}
