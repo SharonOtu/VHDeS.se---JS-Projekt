@@ -1,9 +1,74 @@
 body, html {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(66, 66, 66);
 
 }
 
 .hero-image {
-    background-image: url(ViHyrDig.HeroImg.png) linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Stockholmsvy - HeroImg.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.HeroTxt {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 25px;
+}
+
+.rabattbox {
+ border-radius: 25px;
+ background-color:salmon ;
+ padding: 20px;
+ width: 200px;
+ height: 150px;
+ 
+}
+
+.LoggaInRuta {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    width: 25%;
     
+}
+
+.LoggaInBtn {
+    background-color: salmon;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+
+.LoggaInBtn:hover {
+    opacity: 0.8;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.rabattBtn {
+    background-color: white;
+
+}
+
+.IntroTxt {
+    background-color: white;
+    font-size: 10px;
 }

@@ -7,21 +7,22 @@
 </head>
 <body>
 
+    <div class="LoggaInRuta">
 <h2> Logga in </h2>
-   <form id = "myForm">
-     <label for="email"> E-post: </label><br>
+     <form id = "myForm">
+      <label for="email"> E-post: </label><br>
         <input type ="email" placeholder="Ange E-post" id = "email" name="email" required><br> <!--Epost-->  
-     <label for="pw"> Lösenord </label><br>
+      <label for="pw"> Lösenord </label><br>
         <input type ="password" placeholder="Ange Lösenord" id = "password" name="pw" required><br> <!--Lösenord-->
 
-    <button type="submit" value="submit">Sign in</button>
+    <button class="LoggaInBtn"type="submit" value="submit">Sign in</button>
     <!--<input type="button" value="">-->
 
     <div class="ÅterställPW" >
         <p>Glömt Lösenord? <a href="#">Återställ här</a></p>
     </div>
-    </form> 
-
+      </form> 
+    </div>
 
     <script>
     
@@ -50,5 +51,7 @@
         });
 
     </script>
+
+    <footer>Om oss | Kontakta oss | Integritetspolicy</footer>
 </body>
 </html>
